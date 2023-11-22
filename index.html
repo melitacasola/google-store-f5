@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./assets/img/google-logo.png" type="image/png">
+    <title>Google Store</title>
+  </head>
+  <body>
+    <body>
+
+        <!-- HEADER -->
+        <header id="mueve">
+            <nav class="menu-nav">
+                <div>
+                    <a><img src="./assets/img/google-logo.png" alt="Logo" class="logo"/></a>
+                </div>
+
+              
+                <input type="checkbox" id="check">
+                <label for="check" class="bar-btn">
+                    <img src="./assets/img/menu-burger.svg" alt="burger-menu" class="menu-burger">
+                </label>
+                <ul class="navbar-left">                   
+                    <li><a href="#">Phones</a></li>
+                    <li><a href="#">Earbuds</a></li>
+                    <li><a href="#">Watches</a></li>
+                    <li><a href="#">Smart Home</a></li>
+                    <li><a href="#">Accesories</a></li>
+                    <li><a href="#">Subscriptions</a></li>
+                </ul>
+    
+
+
+
+
+                <div class="navbar-right">
+                    <a href="#"><img src="./assets/img/heroicons_glass-20.svg" alt="help-glass" class="icons"></a>
+                    <a href="#"><img src="./assets/img/material-symbols_help.svg" alt="icon-dude" class="icons-dude"></a>
+                    <a href="#"><img src="./assets/img/mdi_cart.svg" alt="icon-cart" class="icons"></a>
+                    <a href="#"><img src="./assets/img/teenyicons_user.svg" alt="icon-user" class="icons"></a>
+                  
+                </div>
+            </nav>
+
+        </header>
+
+        <!-- MAIN -->
+
+        <main>
+            <div class="see-product">
+                <a href="#" class="arrow"><img src="./assets/img/ph_arrow-up-bold.svg" alt="arrow back">See product details</a>
+            </div>
+
+            <div class="container">
+
+                <section class="img-product">
+                    <img
+                        src="./assets/img/smartwatch_black.png"
+                        alt="Reloj Inteligente Negro"
+                         
+                    />
+                </section>
+                
+                <!-- CARD RIGTH -->
+                <div class="card">
+                    <div class="card-title">
+                        <h1>Fitbit Inspire 3</h1>
+                        
+                        <p>Health & Fitness Tracker</p>
+                        
+                        <h2>99,95 €</h2>
+                    </div>
+                    <hr />
+                    
+                    <section class="mediaTablet">
+                        
+                        <div class="chooseColor">
+
+                            <p>Choose a color</p>
+    
+                            <div class="btns">
+                                
+                                <div class="btn-img-cont">
+                                    <button class="btn-img" style="background-image: url('./assets/img/smartwatch_black.png');" onclick="imagenSeleccionada(1)"></button>
+                                    <p class="leyenda">Midnight Zen</p>
+                                </div>
+                                <div class="btn-img-cont">
+                                    <button class="btn-img" style="background-image: url('./assets/img/smartwatch_pink.png');" onclick="imagenSeleccionada(2)"></button>
+                                    <p class="leyenda">Lilac Bliss</p>
+                                </div>
+                                <div class="btn-img-cont">
+                                    <button class="btn-img" style="background-image: url('./assets/img/smartwatch_yellow.png');" onclick="imagenSeleccionada(3)"></button>
+                                    <p class="leyenda">Morning Glow</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+        
+                        <div class="card-price">
+                            <h3>99,95 €</h3>
+
+                            <hr>
+                                            
+                            <form class="card-cart" method="post" action="/send/">
+                                
+                                <select name="cantidad">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                </select>
+                            
+                                <input type="submit" value="Añadir al carrito" class="btn-add"/>
+                            </form>
+                                                    
+                            <div  class="deli">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="truck" viewBox="0 0 40 40" fill="none">
+                                    <path d="M38.0797 18.5187L35.8922 13.05C35.7526 12.703 35.5124 12.4058 35.2025 12.1964C34.8926 11.987 34.5271 11.8751 34.1531 11.875H28.125V10C28.125 9.83424 28.0592 9.67527 27.9419 9.55806C27.8247 9.44085 27.6658 9.375 27.5 9.375H3.75C3.25272 9.375 2.77581 9.57254 2.42417 9.92417C2.07254 10.2758 1.875 10.7527 1.875 11.25V28.75C1.875 29.2473 2.07254 29.7242 2.42417 30.0758C2.77581 30.4275 3.25272 30.625 3.75 30.625H6.92031C7.07126 31.6656 7.59194 32.6171 8.38705 33.3052C9.18216 33.9933 10.1985 34.372 11.25 34.372C12.3015 34.372 13.3178 33.9933 14.1129 33.3052C14.9081 32.6171 15.4287 31.6656 15.5797 30.625H24.4203C24.5713 31.6656 25.0919 32.6171 25.8871 33.3052C26.6822 33.9933 27.6985 34.372 28.75 34.372C29.8015 34.372 30.8178 33.9933 31.6129 33.3052C32.4081 32.6171 32.9287 31.6656 33.0797 30.625H36.25C36.7473 30.625 37.2242 30.4275 37.5758 30.0758C37.9275 29.7242 38.125 29.2473 38.125 28.75V18.75C38.1247 18.6707 38.1093 18.5923 38.0797 18.5187ZM28.125 13.125H34.1531C34.2781 13.1248 34.4003 13.162 34.5039 13.2319C34.6075 13.3018 34.6878 13.4012 34.7344 13.5172L36.5766 18.125H28.125V13.125ZM3.125 11.25C3.125 11.0842 3.19085 10.9253 3.30806 10.8081C3.42527 10.6908 3.58424 10.625 3.75 10.625H26.875V21.875H3.125V11.25ZM11.25 33.125C10.6319 33.125 10.0277 32.9417 9.51384 32.5983C8.99994 32.255 8.5994 31.7669 8.36288 31.1959C8.12635 30.6249 8.06447 29.9965 8.18505 29.3903C8.30562 28.7842 8.60325 28.2273 9.04029 27.7903C9.47733 27.3533 10.0342 27.0556 10.6403 26.935C11.2465 26.8145 11.8749 26.8764 12.4459 27.1129C13.0169 27.3494 13.505 27.7499 13.8483 28.2638C14.1917 28.7777 14.375 29.3819 14.375 30C14.375 30.4104 14.2942 30.8167 14.1371 31.1959C13.9801 31.575 13.7499 31.9195 13.4597 32.2097C13.1695 32.4999 12.825 32.7301 12.4459 32.8871C12.0667 33.0442 11.6604 33.125 11.25 33.125ZM24.4203 29.375H15.5797C15.4287 28.3344 14.9081 27.3829 14.1129 26.6948C13.3178 26.0067 12.3015 25.628 11.25 25.628C10.1985 25.628 9.18216 26.0067 8.38705 26.6948C7.59194 27.3829 7.07126 28.3344 6.92031 29.375H3.75C3.58424 29.375 3.42527 29.3092 3.30806 29.1919C3.19085 29.0747 3.125 28.9158 3.125 28.75V23.125H26.875V26.0484C26.2237 26.3582 25.659 26.8238 25.2308 27.4041C24.8026 27.9844 24.5242 28.6614 24.4203 29.375ZM28.75 33.125C28.1319 33.125 27.5277 32.9417 27.0138 32.5983C26.4999 32.255 26.0994 31.7669 25.8629 31.1959C25.6264 30.6249 25.5645 29.9965 25.685 29.3903C25.8056 28.7842 26.1033 28.2273 26.5403 27.7903C26.9773 27.3533 27.5342 27.0556 28.1403 26.935C28.7465 26.8145 29.3749 26.8764 29.9459 27.1129C30.5169 27.3494 31.005 27.7499 31.3483 28.2638C31.6917 28.7777 31.875 29.3819 31.875 30C31.875 30.8288 31.5458 31.6237 30.9597 32.2097C30.3737 32.7958 29.5788 33.125 28.75 33.125ZM36.875 28.75C36.875 28.9158 36.8092 29.0747 36.6919 29.1919C36.5747 29.3092 36.4158 29.375 36.25 29.375H33.0797C32.9138 28.2267 32.2987 27.1914 31.3695 26.4967C30.4403 25.8019 29.2733 25.5047 28.125 25.6703V19.375H36.875V28.75Z" fill="#57626B"/>
+                                </svg>
+                                <p>
+                                    Entrega entre el 5 oct y el 6 oct en
+                                    <span>28013</span>
+                                </p>
+                            </div>                  
+                        </div>
+                    </section>
+                </div>
+
+
+                    
+                
+            </div>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-left">
+                
+                <a href="#" target="_blank"
+                    ><img src="./assets/img/twitter.svg" class="icons-social" alt="twitter"></a>
+                <a href="#" target="_blank"
+                    ><img src="./assets/img/mdi_instagram.svg" class="icons-social" alt="instagram"></a>
+                <a href="#" target="_blank"
+                    ><img src="./assets/img/uil_facebook.svg" class="icons-social" alt="facebook"></a>
+                <a href="#" target="_blank"
+                    ><img src="./assets/img/mdi_youtube.svg" class="icons-social-y" alt="youtube"></a>
+                <a href="#" target="_blank"
+                    ><img src="./assets/img/ic_baseline-tiktok.svg" class="icons-social respon" alt="tiktok"></a>
+            </div>
+    
+            <div class="footer-right">
+            <a href="#"
+                ><img src="./assets/img/emojione-v1_flag-for-spain.svg" alt="España" /> España</a
+            >
+            <a href="#">Privacidad</a>
+            <a href="#">Compromiso con la Privacidad de Google Nest</a>
+            <a href="#">Condiciones de venta</a>
+            <a href="#">Términos del Servicio</a>
+            </div>
+        </footer>
+
+        
+    </body>
+</html>
